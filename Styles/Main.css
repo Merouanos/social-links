@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main_background: hsl(0, 0%, 8%) ;
+    --box_background:hsl(0, 0%, 12%);
+    --icons:hsl(0, 0%, 20%);
+    --grenlight:hsl(75, 94%, 57%);
+}
+
+
+
+
+
+body{
+    height: 100vh;
+    background-color: var(--main_background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-size: 12px;
+    color: white;
+}
+
+
+
+main{
+
+    width: 350px;
+    height: 75%;
+    background-color: var(--box_background);
+    
+
+    border-radius: 10px;
+
+    .container{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 10%;
+        
+
+
+        .info{
+            height: 45%;
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+
+
+
+
+            h1{
+
+                font-size: 2rem;
+
+            }
+
+            h2{
+                color: var(--grenlight);
+                font-size: 1.2rem;
+            }
+
+
+            p{
+                height: 30%;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+            }
+
+
+
+
+            img{
+                width: 80px;
+                border-radius: 50%;
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+        nav{
+            height: 45%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            
+
+
+            a{
+                width: 100%;
+                height: 15%;
+
+                background-color: var(--icons);
+                border-radius: 10px;
+
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+        
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:hover{
+                background-color: var(--grenlight);
+            }
+
+
+        }
+
+
+        .attribution{
+            height: 5%;
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:350px)
+{
+
+    body main{
+        width: 290px;
+        .container
+        {
+            width: 90%;
+        }
+    }
+
+}
